@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Todo from '../../components/Todo/Todo';
 import TodoDetail from '../../components/TodoDetail/TodoDetail'
-import "./TodoList.css";
-import { NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
+import "./TodoList.css";
 
 class TodoList extends Component {
 
@@ -46,7 +46,7 @@ class TodoList extends Component {
                 <div className='title'>{this.props.title}</div>
                 <div className="todos">{todos}</div>
                 {todoDetail}
-                <NavLink to="new-todo" exact>New Todo</NavLink>
+                <NavLink to="/new-todo" exact>New Todo</NavLink>
             </div>
         );
     }
